@@ -1,0 +1,328 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+/* =========================
+   FULL SCREEN LAYOUT BASE
+========================= */
+
+.proposal-page,
+.letters-page {
+    min-height: 100dvh; /* dynamic mobile height fix */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* =========================
+   PROPOSAL PAGE
+========================= */
+
+.proposal-page {
+    background: radial-gradient(circle at top, #1a001f, #000);
+    color: white;
+    text-align: center;
+}
+
+.proposal-page h1 {
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+    margin: 20px 0;
+}
+
+/* Kneeling */
+.kneel {
+    font-size: clamp(40px, 10vw, 60px);
+    animation: float 2s infinite alternate ease-in-out;
+}
+
+@keyframes float {
+    from { transform: translateY(0); }
+    to { transform: translateY(10px); }
+}
+
+/* Ring Box */
+.ring-box {
+    width: clamp(120px, 40vw, 180px);
+    margin: 20px auto;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.lid {
+    height: 60px;
+    background: #7a001f;
+    border-radius: 12px 12px 0 0;
+    transform-origin: top;
+    transition: transform 1s;
+}
+
+.box-base {
+    height: 60px;
+    background: #4b000f;
+    border-radius: 0 0 12px 12px;
+    position: relative;
+}
+
+.diamond-ring {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    border: 4px solid gold;
+    border-radius: 50%;
+}
+
+.diamond {
+    width: 16px;
+    height: 16px;
+    background: white;
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.diamond::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: sparkle 1.5s infinite alternate;
+}
+
+@keyframes sparkle {
+    from { box-shadow: 0 0 5px white; }
+    to { box-shadow: 0 0 20px white; }
+}
+
+.ring-box.open .lid {
+    transform: rotateX(-140deg);
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;   /* horizontal center */
+    align-items: center;       /* vertical align */
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+button {
+    flex: 1;
+    padding: 14px 20px;
+    border-radius: 30px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.yes-btn {
+    background: #ff4d6d;
+    color: white;
+}
+
+.no-btn {
+    background: transparent;
+    border: 2px solid #ff4d6d;
+    color: #ff4d6d;
+}
+
+/* Popup FULLSCREEN FIX */
+.popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 999;
+}
+
+.popup.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: white;
+    color: black;
+    padding: 30px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* =========================
+   LETTER PAGE
+========================= */
+
+* { box-sizing: border-box; }
+
+body { margin:0; font-family:'Poppins',sans-serif; overflow-x:hidden; }
+
+/* FULL SCREEN BASE */
+.proposal-page, .letters-page {
+    min-height:100dvh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+/* INTRO */
+.intro-screen{
+    position:fixed; inset:0;
+    background:black;
+    display:flex; justify-content:center; align-items:center;
+    z-index:9999;
+    animation:fadeOut 3s forwards;
+    animation-delay:3s;
+}
+@keyframes fadeOut{ to{opacity:0;visibility:hidden;} }
+
+/* PROPOSAL PAGE */
+.proposal-page{
+    background:radial-gradient(circle at top,#1a001f,#000);
+    color:white; text-align:center;
+}
+
+.kneel{ font-size:clamp(40px,10vw,60px); animation:float 2s infinite alternate; }
+@keyframes float{ from{transform:translateY(0);} to{transform:translateY(10px);} }
+
+.ring-box{ width:clamp(120px,40vw,180px); margin:20px auto; perspective:1000px; cursor:pointer; }
+.lid{ height:60px; background:#7a001f; border-radius:12px 12px 0 0; transform-origin:top; transition:1s; }
+.box-base{ height:60px; background:#4b000f; border-radius:0 0 12px 12px; position:relative; }
+
+.diamond-ring{ position:absolute; top:-20px; left:50%; transform:translateX(-50%); width:50px; height:50px; border:4px solid gold; border-radius:50%; }
+.diamond{ width:16px; height:16px; background:white; position:absolute; top:-12px; left:50%; transform:translateX(-50%) rotate(45deg); }
+.diamond::after{
+    content:""; position:absolute; width:6px; height:6px;
+    background:white; border-radius:50%;
+    top:-6px; left:50%; transform:translateX(-50%);
+    animation:sparkle 1.5s infinite alternate;
+}
+@keyframes sparkle{ from{box-shadow:0 0 5px white;} to{box-shadow:0 0 20px white;} }
+
+.ring-box.open .lid{ transform:rotateX(-140deg); }
+
+.buttons{ display:flex; gap:15px; justify-content:center; flex-wrap:wrap; width:100%; max-width:400px; }
+button{ padding:14px 20px; border-radius:30px; border:none; cursor:pointer; }
+.yes-btn{ background:#ff4d6d; color:white; }
+.no-btn{ background:none; border:2px solid #ff4d6d; color:#ff4d6d; }
+
+/* POPUP */
+.popup{ display:none; position:fixed; inset:0; background:rgba(0,0,0,0.8); }
+.popup.active{ display:flex; justify-content:center; align-items:center; }
+.popup-content{ background:white; color:black; padding:30px; border-radius:20px; width:90%; max-width:400px; text-align:center; }
+
+/* LETTER PAGE BACKGROUND */
+.letters-page{ position:relative; background:#140014; color:white; }
+
+.bg-gradient{
+    position:fixed; inset:0;
+    background:radial-gradient(circle at 30% 30%, rgba(255,0,120,0.3), transparent 60%),
+               radial-gradient(circle at 70% 70%, rgba(255,0,80,0.2), transparent 60%);
+    animation:gradientMove 10s infinite alternate ease-in-out;
+    z-index:-3;
+}
+@keyframes gradientMove{ from{transform:translateY(-20px);} to{transform:translateY(20px);} }
+
+#particles{ position:fixed; inset:0; z-index:-2; pointer-events:none; }
+
+.bg-hearts{ position:fixed; inset:0; z-index:-1; pointer-events:none; }
+
+.floating-heart{
+    position:absolute; font-size:20px;
+    color:rgba(255,100,150,0.6);
+    animation:floatHeart linear infinite;
+}
+@keyframes floatHeart{
+    0%{ transform:translateY(100vh) scale(0.5); opacity:0; }
+    50%{ opacity:1; }
+    100%{ transform:translateY(-10vh) scale(1); opacity:0; }
+}
+
+/* LETTER GRID */
+/* LETTER GRID CUSTOM LAYOUT */
+
+.letters-grid {
+    width: 100%;
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Third letter spans 2 columns and centers itself */
+.letters-grid .letter-card:nth-child(3) {
+    grid-column: span 2;
+    justify-self: center;
+    width: 60%;
+}
+
+/* Letter card style */
+.letter-card {
+    background: white;
+    color: black;
+    padding: 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.letter-card:hover {
+    transform: translateY(-5px);
+}
+
+/* MODAL */
+.modal{ display:none; position:fixed; inset:0; background:rgba(0,0,0,0.8); padding:20px; overflow-y:auto; }
+.modal-content{ background:white; color:black; padding:25px; border-radius:20px; max-width:700px; margin:40px auto; }
+.close{ cursor:pointer; float:right; font-size:20px; }
+
+/* GALLERY */
+.gallery{ display:grid; grid-template-columns:repeat(auto-fit,minmax(100px,1fr)); gap:10px; margin-top:15px; }
+.gallery img{ width:100%; border-radius:10px; cursor:pointer; }
+
+/* LIGHTBOX */
+.lightbox{ display:none; position:fixed; inset:0; background:rgba(0,0,0,0.95); justify-content:center; align-items:center; }
+.lightbox img{ max-width:100%; max-height:90vh; }
+.lightbox.active{ display:flex; }
+
+/* =========================
+   ROSE PETALS
+========================= */
+
+.petal {
+    position: fixed;
+    width: 22px;
+    height: 22px;
+    background: url('https://pngimg.com/uploads/rose_petals/rose_petals_PNG15.png') no-repeat center;
+    background-size: contain;
+    pointer-events: none;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% { transform: translateY(-10vh) rotate(0); }
+    100% { transform: translateY(110vh) rotate(360deg); }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Love Story 💌</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="letters-page">
+
+<div class="bg-gradient"></div>
+<canvas id="particles"></canvas>
+<div class="bg-hearts"></div>
+
+<h1>Our Love Story 💖</h1>
+
+<div class="letters-grid">
+
+    <div class="letter-card" onclick="openLetter('anniversary')">
+        💌 Anniversary
+    </div>
+
+    <div class="letter-card" onclick="openLetter('memories')">
+        📸 Memories
+    </div>
+
+    <div class="letter-card" onclick="openLetter('future')">
+        🌅 Future Plans
+    </div>
+
+</div>
+
+<div id="letterModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeLetter()">×</span>
+        <div id="letterContent"></div>
+    </div>
+</div>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
