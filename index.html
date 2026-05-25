@@ -1,0 +1,1497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sri Alagarmalaiyan Transport | Trusted Since 1996 | Karaikudi</title>
+<meta name="description" content="Sri Alagarmalaiyan Transport – Karaikudi's most trusted bus transport since 1996. School tours, package trips, AC buses across Tamil Nadu. 30 years of excellence.">
+<meta name="keywords" content="bus rental Karaikudi, tourist bus Tamil Nadu, AC bus Karaikudi, school tour bus, travel agency Karaikudi, Sri Alagarmalaiyan">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0D0D0D;
+  --navy-mid:#181818;
+  --navy-light:#222222;
+  --navy-border:rgba(34,34,34,0.6);
+  --gold:#FF5733;
+  --gold-light:#FF4520;
+  --gold-pale:#FFAA95;
+  --gold-glow:rgba(255,87,51,0.22);
+  --cream:#F9F9F9;
+  --cream-dark:#F0EDED;
+  --white:#FFFFFF;
+  --muted:#8A9090;
+  --border-gold:rgba(255,87,51,0.35);
+  --border-light:rgba(0,0,0,0.07);
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'Outfit',sans-serif;background:var(--cream);color:var(--navy);overflow-x:hidden;line-height:1.6}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+
+/* ════════════════ SCROLLBAR ════════════════ */
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:#111}
+::-webkit-scrollbar-thumb{background:var(--gold);border-radius:10px}
+
+/* ════════════════ NAV ════════════════ */
+#navbar{
+  position:fixed;top:0;left:0;right:0;z-index:999;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:1.2rem 6%;
+  transition:all 0.4s ease;
+}
+#navbar.scrolled{
+  background:rgba(13,13,13,0.97);
+  padding:0.75rem 6%;
+  box-shadow:0 2px 40px rgba(0,0,0,0.4);
+  border-bottom:1px solid var(--border-gold);
+}
+.logo{display:flex;align-items:center;gap:0.75rem}
+.logo-emblem{
+  width:42px;height:42px;border-radius:3px;
+  background:var(--gold);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.4rem;font-weight:700;color:var(--navy);
+  flex-shrink:0;
+}
+.logo-text span:first-child{
+  display:block;
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.25rem;font-weight:700;
+  color:var(--gold-light);letter-spacing:0.02em;line-height:1.1;
+}
+.logo-text span:last-child{
+  display:block;font-size:0.6rem;font-weight:500;
+  letter-spacing:0.2em;text-transform:uppercase;
+  color:rgba(255,255,255,0.4);
+}
+.nav-links{display:flex;align-items:center;gap:2rem;list-style:none}
+.nav-links a{
+  font-size:0.8rem;font-weight:500;letter-spacing:0.1em;
+  text-transform:uppercase;color:rgba(255,255,255,0.75);
+  transition:color 0.2s;
+}
+.nav-links a:hover{color:var(--gold-light)}
+.nav-book{
+  background:var(--gold);color:var(--navy) !important;
+  padding:0.5rem 1.3rem;border-radius:2px;
+  font-weight:700 !important;
+  transition:background 0.2s,transform 0.15s !important;
+}
+.nav-book:hover{background:var(--gold-light) !important;transform:translateY(-1px)}
+.hamburger{display:none;cursor:pointer;flex-direction:column;gap:5px}
+.hamburger span{display:block;width:25px;height:2px;background:white;border-radius:2px;transition:0.3s}
+.hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+.mob-menu{
+  display:none;position:fixed;inset:0;z-index:998;
+  background:var(--navy);
+  flex-direction:column;align-items:center;justify-content:center;gap:2.2rem;
+}
+.mob-menu.open{display:flex}
+.mob-menu a{
+  font-family:'Cormorant Garamond',serif;
+  font-size:2rem;font-weight:700;
+  color:var(--cream);letter-spacing:0.04em;
+  transition:color 0.2s;
+}
+.mob-menu a:hover{color:var(--gold-light)}
+
+/* ════════════════ HERO ════════════════ */
+#hero{
+  min-height:100vh;background:var(--navy);
+  position:relative;overflow:hidden;
+  display:flex;align-items:center;
+}
+.hero-bg-lines{
+  position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(255,87,51,0.06) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,87,51,0.06) 1px,transparent 1px);
+  background-size:80px 80px;
+}
+.hero-glow-1{
+  position:absolute;top:-10%;right:-5%;
+  width:600px;height:600px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,87,51,0.12) 0%,transparent 65%);
+  pointer-events:none;
+}
+.hero-glow-2{
+  position:absolute;bottom:-20%;left:-10%;
+  width:500px;height:500px;border-radius:50%;
+  background:radial-gradient(circle,rgba(24,24,24,0.8) 0%,transparent 65%);
+  pointer-events:none;
+}
+.hero-inner{
+  position:relative;z-index:2;
+  display:grid;grid-template-columns:1fr 1fr;
+  align-items:center;gap:4rem;
+  width:100%;padding:8rem 6% 5rem;
+  max-width:1300px;margin:0 auto;
+}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:0.5rem;
+  font-size:0.68rem;font-weight:600;letter-spacing:0.22em;
+  text-transform:uppercase;color:var(--gold);
+  margin-bottom:1rem;
+}
+.hero-tag::before{content:'';width:28px;height:1.5px;background:var(--gold)}
+.hero-h1{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(2.6rem,5vw,4.4rem);
+  font-weight:700;line-height:1.08;color:var(--white);
+  margin-bottom:1.2rem;
+}
+.hero-h1 em{color:var(--gold-light);font-style:italic}
+.hero-sub{
+  font-size:1rem;font-weight:300;line-height:1.85;
+  color:rgba(255,255,255,0.55);max-width:500px;
+  margin-bottom:2.5rem;
+}
+.hero-sub strong{color:rgba(255,255,255,0.9);font-weight:500}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:3rem}
+.btn-gold{
+  display:inline-flex;align-items:center;gap:0.5rem;
+  background:var(--gold);color:var(--navy);
+  padding:0.9rem 2rem;font-size:0.85rem;font-weight:700;
+  letter-spacing:0.07em;text-transform:uppercase;border-radius:2px;
+  transition:background 0.2s,transform 0.15s;border:none;cursor:pointer;
+  font-family:'Outfit',sans-serif;
+}
+.btn-gold:hover{background:var(--gold-light);transform:translateY(-2px)}
+.btn-ghost{
+  display:inline-flex;align-items:center;gap:0.5rem;
+  border:1.5px solid rgba(255,87,51,0.4);color:rgba(255,255,255,0.8);
+  padding:0.9rem 2rem;font-size:0.85rem;font-weight:500;
+  letter-spacing:0.07em;text-transform:uppercase;border-radius:2px;
+  transition:all 0.2s;
+}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold-light);transform:translateY(-2px)}
+.hero-trust{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}
+.hero-trust-item{
+  display:flex;align-items:center;gap:0.5rem;
+  font-size:0.78rem;color:rgba(255,255,255,0.4);
+}
+.hero-trust-dot{width:6px;height:6px;border-radius:50%;background:var(--gold)}
+/* Right side visual */
+.hero-visual{
+  display:flex;flex-direction:column;gap:1.2rem;
+  position:relative;
+}
+.hero-card-main{
+  background:var(--navy-mid);
+  border:1px solid var(--border-gold);
+  border-radius:6px;padding:2rem;
+  position:relative;overflow:hidden;
+}
+.hero-card-main::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--gold),var(--gold-light));
+}
+.hc-icon{font-size:2.5rem;margin-bottom:1rem}
+.hc-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.4rem;font-weight:700;color:var(--white);
+  margin-bottom:0.4rem;
+}
+.hc-sub{font-size:0.82rem;color:rgba(255,255,255,0.4)}
+.hero-cards-row{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+.hero-card-small{
+  background:var(--navy-mid);
+  border:1px solid var(--border-gold);border-radius:6px;
+  padding:1.4rem;
+  display:flex;flex-direction:column;gap:0.4rem;
+}
+.hcs-num{
+  font-family:'Cormorant Garamond',serif;
+  font-size:2.2rem;font-weight:700;color:var(--gold-light);line-height:1;
+}
+.hcs-label{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.4)}
+.hero-pill{
+  display:flex;align-items:center;gap:0.8rem;
+  background:var(--navy-mid);border:1px solid var(--border-gold);
+  border-radius:40px;padding:0.7rem 1.2rem;
+  width:fit-content;
+}
+.hero-pill-dot{
+  width:8px;height:8px;border-radius:50%;background:#2ECC71;
+  box-shadow:0 0 8px rgba(46,204,113,0.6);
+  animation:pulse 2s infinite;
+}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.5}}
+.hero-pill span{font-size:0.78rem;color:rgba(255,255,255,0.7)}
+.hero-scroll{
+  position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);
+  display:flex;flex-direction:column;align-items:center;gap:0.5rem;
+  color:rgba(255,255,255,0.25);font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;
+}
+.hero-scroll-bar{
+  width:1.5px;height:36px;
+  background:linear-gradient(to bottom,var(--gold),transparent);
+  animation:scrollbar 2s ease-in-out infinite;
+}
+@keyframes scrollbar{0%,100%{transform:scaleY(1);opacity:1}50%{transform:scaleY(0.4);opacity:0.4}}
+
+/* ════════════════ STATS BAND ════════════════ */
+#stats{
+  background:var(--navy-mid);
+  border-top:1px solid var(--border-gold);
+  border-bottom:1px solid var(--border-gold);
+}
+.stats-inner{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  max-width:1100px;margin:0 auto;
+}
+.stat{
+  text-align:center;padding:2.2rem 1rem;
+  border-right:1px solid rgba(255,87,51,0.12);
+  transition:background 0.2s;
+}
+.stat:last-child{border-right:none}
+.stat:hover{background:rgba(255,87,51,0.04)}
+.stat-n{
+  font-family:'Cormorant Garamond',serif;
+  font-size:3rem;font-weight:700;
+  color:var(--gold-light);line-height:1;
+}
+.stat-l{
+  font-size:0.72rem;font-weight:500;letter-spacing:0.1em;
+  text-transform:uppercase;color:rgba(255,255,255,0.4);
+  margin-top:0.5rem;
+}
+
+/* ════════════════ SECTION COMMONS ════════════════ */
+.section-wrap{padding:6.5rem 6%;max-width:1300px;margin:0 auto}
+.tag{
+  display:inline-flex;align-items:center;gap:0.5rem;
+  font-size:0.68rem;font-weight:600;letter-spacing:0.22em;
+  text-transform:uppercase;color:var(--gold);margin-bottom:0.8rem;
+}
+.tag::before{content:'';width:22px;height:1.5px;background:var(--gold)}
+h2.sec-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(1.9rem,3.5vw,2.8rem);
+  font-weight:700;line-height:1.1;color:var(--navy);
+}
+h2.sec-title.light{color:var(--white)}
+.sec-body{
+  font-size:0.95rem;line-height:1.9;color:#5A6A7A;
+  margin-top:0.9rem;max-width:520px;
+}
+.sec-body.light{color:rgba(255,255,255,0.55)}
+.divider{
+  width:50px;height:2px;
+  background:linear-gradient(90deg,var(--gold),transparent);
+  margin:1.2rem 0;
+}
+
+/* ════════════════ ABOUT ════════════════ */
+#about{background:var(--cream)}
+.about-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:5rem;align-items:center;
+}
+.about-visual-wrap{position:relative}
+.about-main-box{
+  background:var(--navy);
+  border-radius:6px;
+  padding:3rem 2.5rem;
+  border:1px solid var(--border-gold);
+  position:relative;overflow:hidden;
+}
+.about-main-box::after{
+  content:'';position:absolute;
+  bottom:-40px;right:-40px;
+  width:160px;height:160px;border-radius:50%;
+  background:var(--gold-glow);
+}
+.about-bus-icon{font-size:5rem;margin-bottom:1.5rem}
+.about-box-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.6rem;font-weight:700;color:var(--white);
+  margin-bottom:0.6rem;
+}
+.about-box-body{font-size:0.85rem;line-height:1.8;color:rgba(255,255,255,0.5)}
+.about-achievements{
+  position:absolute;right:-1.5rem;top:2rem;
+  background:var(--gold);border-radius:4px;
+  padding:1.2rem 1.4rem;
+  min-width:160px;
+}
+.ach-num{
+  font-family:'Cormorant Garamond',serif;
+  font-size:2.6rem;font-weight:700;color:var(--navy);line-height:1;
+}
+.ach-label{
+  font-size:0.65rem;font-weight:700;letter-spacing:0.12em;
+  text-transform:uppercase;color:rgba(11,24,41,0.7);
+  margin-top:0.2rem;
+}
+.about-mini-cards{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:0.8rem;margin-top:1rem;
+}
+.amc{
+  background:white;border:1px solid var(--border-light);
+  border-radius:4px;padding:1rem;
+  display:flex;gap:0.7rem;align-items:flex-start;
+}
+.amc-icon{font-size:1.3rem;flex-shrink:0}
+.amc h5{font-size:0.8rem;font-weight:600;color:var(--navy)}
+.amc p{font-size:0.73rem;color:var(--muted);margin-top:0.15rem}
+.about-quote{
+  margin:1.8rem 0;
+  padding:1.2rem 1.5rem;
+  border-left:3px solid var(--gold);
+  background:rgba(192,57,43,0.05);
+  border-radius:0 4px 4px 0;
+}
+.about-quote p{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.15rem;font-style:italic;
+  color:#5A6A7A;line-height:1.6;
+}
+
+/* ════════════════ SERVICES ════════════════ */
+#services{background:var(--navy)}
+.srv-head{
+  display:flex;justify-content:space-between;align-items:flex-end;
+  flex-wrap:wrap;gap:2rem;margin-bottom:3.5rem;
+}
+.srv-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:1.5px;
+  background:rgba(192,57,43,0.1);
+  border:1px solid var(--border-gold);
+  border-radius:6px;overflow:hidden;
+}
+.srv-card{
+  background:var(--navy-mid);padding:2.5rem 2rem;
+  transition:background 0.3s;cursor:default;
+  position:relative;overflow:hidden;
+}
+.srv-card::before{
+  content:'';position:absolute;
+  top:0;left:0;width:3px;height:0;
+  background:var(--gold);
+  transition:height 0.3s;
+}
+.srv-card:hover{background:var(--navy-light)}
+.srv-card:hover::before{height:100%}
+.srv-num{
+  font-family:'Cormorant Garamond',serif;
+  font-size:3.5rem;font-weight:700;
+  color:rgba(255,87,51,0.12);line-height:1;
+  margin-bottom:1rem;
+}
+.srv-icon{font-size:2rem;margin-bottom:0.8rem}
+.srv-card h3{font-size:1.05rem;font-weight:600;color:var(--white);margin-bottom:0.6rem}
+.srv-card p{font-size:0.85rem;line-height:1.8;color:rgba(255,255,255,0.45)}
+.srv-badge{
+  display:inline-block;margin-top:1.2rem;
+  padding:0.28rem 0.75rem;font-size:0.63rem;font-weight:600;
+  letter-spacing:0.1em;text-transform:uppercase;
+  color:var(--gold);border:1px solid rgba(192,57,43,0.3);border-radius:2px;
+}
+
+/* ════════════════ FEATURES ════════════════ */
+#features{background:var(--white)}
+.feat-grid{
+  display:grid;grid-template-columns:1fr 1.15fr;
+  gap:5rem;align-items:start;
+}
+.feat-list{display:flex;flex-direction:column}
+.feat-row{
+  display:flex;gap:1.2rem;align-items:flex-start;
+  padding:1.5rem 0;
+  border-bottom:1px solid rgba(0,0,0,0.05);
+  transition:padding-left 0.25s;
+}
+.feat-row:first-child{border-top:1px solid rgba(0,0,0,0.05)}
+.feat-row:hover{padding-left:0.6rem}
+.feat-ico{
+  width:46px;height:46px;flex-shrink:0;
+  background:var(--gold-glow);border-radius:4px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.3rem;
+}
+.feat-row h4{font-size:0.93rem;font-weight:600;color:var(--navy);margin-bottom:0.25rem}
+.feat-row p{font-size:0.82rem;line-height:1.75;color:#7A8A98}
+/* Aside box */
+.feat-aside{
+  position:sticky;top:7rem;
+  background:var(--navy);border-radius:6px;
+  border:1px solid var(--border-gold);
+  overflow:hidden;
+}
+.feat-aside-top{
+  padding:2.5rem 2rem;
+  border-bottom:1px solid var(--border-gold);
+}
+.feat-aside-top h3{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.7rem;font-weight:700;color:var(--white);
+  margin-bottom:0.8rem;
+}
+.feat-aside-top p{font-size:0.85rem;line-height:1.8;color:rgba(255,255,255,0.45)}
+.feat-aside-btns{padding:1.5rem 2rem;display:flex;flex-direction:column;gap:0.8rem}
+.feat-aside-btns a{
+  display:flex;align-items:center;justify-content:center;gap:0.5rem;
+  padding:0.9rem;border-radius:2px;
+  font-size:0.82rem;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;
+  transition:all 0.2s;
+}
+.aside-call{background:var(--gold);color:var(--navy)}
+.aside-call:hover{background:var(--gold-light)}
+.aside-wa{
+  background:rgba(37,211,102,0.1);color:#2ECC71;
+  border:1px solid rgba(37,211,102,0.25);
+}
+.aside-wa:hover{background:rgba(37,211,102,0.18)}
+.feat-aside-achs{padding:1.5rem 2rem;border-top:1px solid var(--border-gold)}
+.feat-aside-achs h5{
+  font-size:0.63rem;letter-spacing:0.15em;text-transform:uppercase;
+  color:rgba(255,255,255,0.3);margin-bottom:1rem;
+}
+.ach-item{
+  display:flex;align-items:flex-start;gap:0.6rem;
+  padding:0.5rem 0;
+  border-bottom:1px solid rgba(192,57,43,0.07);
+  font-size:0.8rem;color:rgba(255,255,255,0.5);
+  line-height:1.5;
+}
+.ach-item:last-child{border-bottom:none}
+.ach-dot{
+  width:5px;height:5px;border-radius:50%;
+  background:var(--gold);flex-shrink:0;margin-top:0.45rem;
+}
+
+/* ════════════════ FLEET ════════════════ */
+#fleet{background:var(--cream)}
+.fleet-head{text-align:center;max-width:560px;margin:0 auto 3.5rem}
+.fleet-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:1.5rem;
+}
+.fleet-card{
+  background:var(--white);border-radius:6px;
+  border:1px solid var(--border-light);
+  overflow:hidden;
+  transition:transform 0.25s,box-shadow 0.25s;
+}
+.fleet-card:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(13,13,13,0.1)}
+.fleet-top{
+  background:var(--navy);
+  padding:2rem 1.5rem;text-align:center;
+  position:relative;
+}
+.fleet-top::after{
+  content:'';position:absolute;
+  bottom:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+}
+.fleet-seats{
+  font-family:'Cormorant Garamond',serif;
+  font-size:3.2rem;font-weight:700;
+  color:var(--gold-light);line-height:1;
+}
+.fleet-seat-label{
+  font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;
+  color:rgba(255,255,255,0.35);margin-top:0.3rem;
+}
+.fleet-body{padding:1.3rem 1.5rem}
+.fleet-body h4{font-size:0.95rem;font-weight:600;color:var(--navy);margin-bottom:0.7rem}
+.fleet-tags{display:flex;flex-wrap:wrap;gap:0.4rem}
+.f-tag{
+  font-size:0.62rem;font-weight:600;letter-spacing:0.07em;text-transform:uppercase;
+  color:var(--gold);background:rgba(192,57,43,0.08);
+  padding:0.25rem 0.6rem;border-radius:2px;
+}
+.fleet-ideal{
+  font-size:0.72rem;color:var(--muted);
+  margin-top:0.8rem;padding-top:0.8rem;
+  border-top:1px solid var(--border-light);
+}
+
+/* ════════════════ DESTINATIONS ════════════════ */
+#destinations{background:var(--navy)}
+.dest-head{
+  display:flex;justify-content:space-between;align-items:flex-end;
+  flex-wrap:wrap;gap:2rem;margin-bottom:3.5rem;
+}
+.dest-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:1.5rem;
+}
+.dest-card{
+  background:var(--navy-mid);
+  border:1px solid var(--border-gold);
+  border-radius:6px;padding:2rem;
+  transition:border-color 0.2s,background 0.2s;
+}
+.dest-card:hover{border-color:rgba(192,57,43,0.5);background:var(--navy-light)}
+.dest-flag{font-size:2rem;margin-bottom:1rem}
+.dest-card h3{font-size:1.05rem;font-weight:600;color:var(--white);margin-bottom:0.5rem}
+.dest-card p{font-size:0.82rem;line-height:1.75;color:rgba(255,255,255,0.45)}
+.dest-tags{display:flex;flex-wrap:wrap;gap:0.4rem;margin-top:1rem}
+.d-tag{
+  font-size:0.62rem;font-weight:500;
+  color:rgba(255,255,255,0.4);
+  background:rgba(255,255,255,0.05);
+  padding:0.2rem 0.6rem;border-radius:20px;
+}
+
+/* ════════════════ TESTIMONIALS ════════════════ */
+#testimonials{background:var(--cream)}
+.testi-head{text-align:center;max-width:520px;margin:0 auto 3.5rem}
+.testi-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:1.5rem;
+}
+.testi-card{
+  background:var(--white);border:1px solid var(--border-light);
+  border-radius:6px;padding:2rem;
+  transition:border-color 0.2s,transform 0.2s;
+}
+.testi-card:hover{border-color:rgba(192,57,43,0.3);transform:translateY(-3px)}
+.testi-stars{color:var(--gold);font-size:0.9rem;margin-bottom:1rem}
+.testi-text{
+  font-size:0.88rem;line-height:1.9;
+  color:#5A6A7A;margin-bottom:1.5rem;
+  font-style:italic;
+}
+.testi-text::before{content:'\201C';font-family:'Cormorant Garamond',serif;font-size:2rem;color:var(--gold);line-height:0;vertical-align:-0.5rem;margin-right:0.1rem}
+.testi-author{
+  display:flex;align-items:center;gap:0.8rem;
+  padding-top:1rem;border-top:1px solid var(--border-light);
+}
+.testi-av{
+  width:38px;height:38px;border-radius:50%;
+  background:linear-gradient(135deg,var(--navy),var(--navy-light));
+  display:flex;align-items:center;justify-content:center;
+  font-size:0.78rem;font-weight:700;color:var(--gold);
+  flex-shrink:0;
+}
+.testi-name{font-size:0.85rem;font-weight:600;color:var(--navy)}
+.testi-label{font-size:0.72rem;color:var(--muted);margin-top:0.1rem}
+
+/* ════════════════ CLIENTS ════════════════ */
+#clients{
+  background:var(--white);
+  padding:4rem 6%;
+  border-top:1px solid var(--border-light);
+  border-bottom:1px solid var(--border-light);
+}
+.clients-label{
+  text-align:center;font-size:0.68rem;font-weight:600;
+  letter-spacing:0.22em;text-transform:uppercase;
+  color:#C0CDD8;margin-bottom:2.5rem;
+}
+.clients-overflow{overflow:hidden;max-width:1100px;margin:0 auto}
+.clients-track{
+  display:flex;align-items:center;gap:3rem;
+  animation:scroll-loop 24s linear infinite;
+  width:max-content;
+}
+.clients-track:hover{animation-play-state:paused}
+@keyframes scroll-loop{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.c-name{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.05rem;font-weight:600;color:#B8C8D8;
+  white-space:nowrap;transition:color 0.2s;cursor:default;
+}
+.c-name:hover{color:var(--gold)}
+.c-dot{width:4px;height:4px;border-radius:50%;background:rgba(192,57,43,0.3);flex-shrink:0}
+
+/* ════════════════ CTA BANNER ════════════════ */
+#cta-banner{
+  background:var(--navy-mid);
+  border-top:1px solid var(--border-gold);
+  border-bottom:1px solid var(--border-gold);
+  padding:5rem 6%;text-align:center;
+}
+.cta-tag{
+  display:inline-flex;align-items:center;gap:0.5rem;
+  justify-content:center;
+  font-size:0.68rem;font-weight:600;letter-spacing:0.22em;
+  text-transform:uppercase;color:var(--gold);margin-bottom:1rem;
+}
+.cta-tag::before{content:'';width:22px;height:1.5px;background:var(--gold)}
+.cta-tag::after{content:'';width:22px;height:1.5px;background:var(--gold)}
+#cta-banner h2{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(2rem,4vw,3.2rem);font-weight:700;
+  color:var(--white);margin-bottom:1rem;
+}
+#cta-banner p{
+  font-size:1rem;color:rgba(255,255,255,0.5);
+  max-width:480px;margin:0 auto 2rem;line-height:1.8;
+}
+.cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.cta-phone{
+  font-size:1.4rem;font-weight:600;color:var(--gold-light);
+  letter-spacing:0.05em;margin-top:1.5rem;display:block;
+  font-family:'Cormorant Garamond',serif;
+}
+
+/* ════════════════ CONTACT ════════════════ */
+#contact{background:var(--cream)}
+.contact-grid{
+  display:grid;grid-template-columns:1fr 1.1fr;
+  gap:4.5rem;align-items:start;
+}
+.contact-info-list{
+  display:flex;flex-direction:column;gap:1.5rem;
+  margin-top:2rem;
+}
+.ci-item{display:flex;gap:1rem;align-items:flex-start}
+.ci-icon{
+  width:44px;height:44px;flex-shrink:0;
+  background:var(--gold-glow);border-radius:4px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.1rem;
+}
+.ci-item h5{
+  font-size:0.67rem;font-weight:600;letter-spacing:0.14em;
+  text-transform:uppercase;color:var(--gold);margin-bottom:0.25rem;
+}
+.ci-item p,.ci-item a{font-size:0.92rem;color:var(--navy);line-height:1.6}
+.ci-item a:hover{color:var(--gold)}
+.map-box{
+  margin-top:2rem;border-radius:6px;overflow:hidden;
+  border:1px solid var(--border-light);height:200px;
+}
+.map-box iframe{width:100%;height:100%;border:none}
+/* Form */
+.form-box{
+  background:var(--navy);border-radius:6px;
+  border:1px solid var(--border-gold);
+  padding:2.5rem;
+}
+.form-box h3{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.7rem;font-weight:700;color:var(--white);
+  margin-bottom:0.4rem;
+}
+.form-box p{font-size:0.82rem;color:rgba(255,255,255,0.4);margin-bottom:2rem}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.fg{margin-bottom:1rem}
+.fg label{
+  display:block;font-size:0.67rem;font-weight:600;
+  letter-spacing:0.12em;text-transform:uppercase;
+  color:rgba(255,255,255,0.35);margin-bottom:0.45rem;
+}
+.fg input,.fg select,.fg textarea{
+  width:100%;
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(192,57,43,0.18);
+  border-radius:3px;padding:0.78rem 1rem;
+  font-family:'Outfit',sans-serif;font-size:0.87rem;
+  color:var(--white);outline:none;
+  transition:border-color 0.2s,background 0.2s;
+}
+.fg input:focus,.fg select:focus,.fg textarea:focus{
+  border-color:var(--gold);
+  background:rgba(255,87,51,0.06);
+}
+.fg input::placeholder,.fg textarea::placeholder{color:rgba(255,255,255,0.2)}
+.fg select option{background:var(--navy-mid);color:white}
+.fg textarea{resize:vertical;min-height:100px}
+.f-submit{
+  width:100%;padding:1rem;margin-top:0.5rem;
+  background:var(--gold);color:var(--navy);
+  border:none;border-radius:3px;
+  font-family:'Outfit',sans-serif;
+  font-size:0.85rem;font-weight:700;
+  letter-spacing:0.08em;text-transform:uppercase;
+  cursor:pointer;transition:background 0.2s,transform 0.15s;
+}
+.f-submit:hover{background:var(--gold-light);transform:translateY(-1px)}
+
+/* ════════════════ FOOTER ════════════════ */
+footer{
+  background:var(--navy);
+  border-top:1px solid var(--border-gold);
+}
+.footer-inner{
+  display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;
+  gap:3.5rem;padding:4rem 6% 3rem;
+  max-width:1300px;margin:0 auto;
+  border-bottom:1px solid rgba(192,57,43,0.1);
+}
+.footer-brand-desc{
+  font-size:0.82rem;line-height:1.85;
+  color:rgba(255,255,255,0.35);
+  margin-top:1rem;max-width:260px;
+}
+.footer-socials{display:flex;gap:0.6rem;margin-top:1.5rem}
+.f-social{
+  width:36px;height:36px;border-radius:3px;
+  border:1px solid rgba(192,57,43,0.2);
+  display:flex;align-items:center;justify-content:center;
+  color:rgba(255,255,255,0.4);font-size:0.78rem;font-weight:600;
+  transition:all 0.2s;
+}
+.f-social:hover{border-color:var(--gold);color:var(--gold)}
+.footer-col h4{
+  font-size:0.65rem;font-weight:700;letter-spacing:0.18em;
+  text-transform:uppercase;color:var(--gold);
+  margin-bottom:1.3rem;
+}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:0.75rem}
+.footer-col ul a{
+  font-size:0.82rem;color:rgba(255,255,255,0.4);
+  transition:color 0.2s;
+}
+.footer-col ul a:hover{color:var(--cream)}
+.footer-bottom{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:1.5rem 6%;max-width:1300px;margin:0 auto;
+  font-size:0.73rem;color:rgba(255,255,255,0.2);
+}
+
+/* ════════════════ WHATSAPP FLOAT ════════════════ */
+.wa-float{
+  position:fixed;bottom:2rem;right:2rem;z-index:50;
+  width:56px;height:56px;border-radius:50%;
+  background:#25D366;color:white;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.5rem;box-shadow:0 4px 24px rgba(37,211,102,0.45);
+  transition:transform 0.2s;
+}
+.wa-float:hover{transform:scale(1.1)}
+
+/* ════════════════ SCROLL ANIMATIONS ════════════════ */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity 0.7s ease,transform 0.7s ease}
+.reveal.up{opacity:1;transform:none}
+.d1{transition-delay:0.1s}.d2{transition-delay:0.2s}
+.d3{transition-delay:0.3s}.d4{transition-delay:0.4s}
+
+/* ════════════════ RESPONSIVE ════════════════ */
+@media(max-width:1100px){
+  .hero-inner{grid-template-columns:1fr;padding:8rem 6% 4rem}
+  .hero-visual{display:none}
+  .about-grid,.feat-grid,.contact-grid{grid-template-columns:1fr;gap:3rem}
+  .srv-grid{grid-template-columns:1fr 1fr}
+  .fleet-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-inner{grid-template-columns:1fr 1fr}
+  .stats-inner{grid-template-columns:repeat(2,1fr)}
+  .stat:nth-child(2){border-right:none}
+  .testi-grid{grid-template-columns:1fr 1fr}
+  .dest-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:680px){
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  .srv-grid,.testi-grid,.dest-grid{grid-template-columns:1fr}
+  .fleet-grid{grid-template-columns:1fr 1fr}
+  .about-mini-cards{grid-template-columns:1fr}
+  .about-achievements{position:static;margin-top:1rem;display:inline-block}
+  .f-row{grid-template-columns:1fr}
+  .footer-inner{grid-template-columns:1fr}
+  .footer-bottom{flex-direction:column;gap:0.4rem;text-align:center}
+  .cta-btns{flex-direction:column;align-items:center}
+  .hero-btns{flex-direction:column;align-items:flex-start}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav id="navbar">
+  <div class="logo">
+    <div class="logo-emblem">SA</div>
+    <div class="logo-text">
+      <span>Sri Alagarmalaiyan</span>
+      <span>Bus Transports · Est. 1996</span>
+    </div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#fleet">Fleet</a></li>
+    <li><a href="#destinations">Destinations</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#contact" class="nav-book">Book Now</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mob-menu" id="mobMenu">
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#services" onclick="closeMenu()">Services</a>
+  <a href="#fleet" onclick="closeMenu()">Fleet</a>
+  <a href="#destinations" onclick="closeMenu()">Destinations</a>
+  <a href="#testimonials" onclick="closeMenu()">Reviews</a>
+  <a href="#contact" onclick="closeMenu()">Book Now</a>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<section id="hero">
+  <div class="hero-bg-lines"></div>
+  <div class="hero-glow-1"></div>
+  <div class="hero-glow-2"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-tag">Trusted Since 1996 · Karaikudi, Tamil Nadu</div>
+      <h1 class="hero-h1">
+        Travel in <em>Comfort,</em><br>Arrive with <em>Confidence</em>
+      </h1>
+      <p class="hero-sub">
+        Sri Alagarmalaiyan Bus Transports — Karaikudi's most trusted travel partner for <strong>over 30 years.</strong> School tours, pilgrimages, corporate trips & package travels across Tamil Nadu and beyond.
+      </p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-gold">Book Your Trip →</a>
+        <a href="tel:+919445238997" class="btn-ghost">📞 +91 94452 38997</a>
+      </div>
+      <div class="hero-trust">
+        <div class="hero-trust-item"><div class="hero-trust-dot"></div><span>1 Lakh+ Happy Customers</span></div>
+        <div class="hero-trust-item"><div class="hero-trust-dot"></div><span>20+ Brand New AC Buses</span></div>
+        <div class="hero-trust-item"><div class="hero-trust-dot"></div><span>24/7 Support</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card-main">
+        <div class="hc-icon">🚌</div>
+        <div class="hc-title">Sri Alagarmalaiyan Fleet</div>
+        <div class="hc-sub">20+ Brand-new fully AC coaches · 54, 50, 40 & 30 seaters</div>
+      </div>
+      <div class="hero-cards-row">
+        <div class="hero-card-small">
+          <div class="hcs-num">30<span style="font-size:1.2rem">+</span></div>
+          <div class="hcs-label">Years Experience</div>
+        </div>
+        <div class="hero-card-small">
+          <div class="hcs-num">1L<span style="font-size:1.2rem">+</span></div>
+          <div class="hcs-label">Customers Served</div>
+        </div>
+      </div>
+      <div class="hero-pill">
+        <div class="hero-pill-dot"></div>
+        <span>Available 24/7 — Call anytime for bookings</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="hero-scroll-bar"></div>
+    Scroll
+  </div>
+</section>
+
+<!-- ═══ STATS ═══ -->
+<div id="stats">
+  <div class="stats-inner">
+    <div class="stat reveal">
+      <div class="stat-n"><span class="counter" data-target="30">0</span>+</div>
+      <div class="stat-l">Years of Experience</div>
+    </div>
+    <div class="stat reveal d1">
+      <div class="stat-n"><span class="counter" data-target="100">0</span>K+</div>
+      <div class="stat-l">Delighted Customers</div>
+    </div>
+    <div class="stat reveal d2">
+      <div class="stat-n"><span class="counter" data-target="20">0</span>+</div>
+      <div class="stat-l">Brand-New AC Vehicles</div>
+    </div>
+    <div class="stat reveal d3">
+      <div class="stat-n"><span class="counter" data-target="10">0</span>+</div>
+      <div class="stat-l">Yrs Driver Experience</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ ABOUT ═══ -->
+<section id="about">
+  <div class="section-wrap">
+    <div class="about-grid">
+      <div class="about-visual-wrap reveal">
+        <div class="about-main-box">
+          <div class="about-bus-icon">🚌</div>
+          <div class="about-box-title">30 Years of Trusted Service</div>
+          <div class="about-box-body">
+            Every bus in our fleet is brand new, fully air-conditioned, and maintained to the highest standards. Your safety and comfort are our greatest priority on every single journey.
+          </div>
+        </div>
+        <div class="about-achievements">
+          <div class="ach-num">#1</div>
+          <div class="ach-label">Bus Service<br>in Karaikudi</div>
+        </div>
+        <div class="about-mini-cards">
+          <div class="amc"><div class="amc-icon">🏫</div><div><h5>School Tours</h5><p>Safe, fun & educational</p></div></div>
+          <div class="amc"><div class="amc-icon">📦</div><div><h5>Package Trips</h5><p>All-inclusive travel</p></div></div>
+          <div class="amc"><div class="amc-icon">🛡️</div><div><h5>Safe & Secure</h5><p>Expert drivers always</p></div></div>
+          <div class="amc"><div class="amc-icon">🎵</div><div><h5>DJ & Lighting</h5><p>Fun onboard system</p></div></div>
+        </div>
+      </div>
+      <div>
+        <div class="tag reveal">Our Story</div>
+        <h2 class="sec-title reveal">Make Every Journey an Unforgettable Memory</h2>
+        <div class="divider reveal"></div>
+        <div class="about-quote reveal">
+          <p>The world is a book — and those who do not travel read only a page.</p>
+        </div>
+        <p class="sec-body reveal">
+          Since 1996, Sri Alagarmalaiyan Bus Transports has been the most trusted name in travel across Tamil Nadu. Founded on the values of safety, comfort, and reliability — we have delighted over one lakh passengers, from school students on their very first excursions to families on pilgrimages and corporate teams on retreats.
+        </p>
+        <p class="sec-body reveal" style="margin-top:1rem;">
+          Our fleet of 20+ brand-new air-conditioned coaches, driven by experienced professionals with 10+ years on the road, ensures that every passenger arrives safely, comfortably, and on time — every time.
+        </p>
+        <div style="margin-top:2.5rem" class="reveal">
+          <a href="#contact" class="btn-gold">Plan My Trip →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SERVICES ═══ -->
+<section id="services">
+  <div class="section-wrap">
+    <div class="srv-head">
+      <div>
+        <div class="tag reveal" style="color:var(--gold)">What We Offer</div>
+        <h2 class="sec-title light reveal">Our Services</h2>
+      </div>
+      <p class="sec-body light reveal" style="max-width:300px;text-align:right">
+        From intimate family trips to large student groups — the right solution for every journey.
+      </p>
+    </div>
+    <div class="srv-grid">
+      <div class="srv-card reveal">
+        <div class="srv-num">01</div>
+        <div class="srv-icon">🏫</div>
+        <h3>School & College Tours</h3>
+        <p>Safe, educational, and memorable excursions for students across Tamil Nadu. Our team coordinates every detail so teachers and parents travel worry-free.</p>
+        <span class="srv-badge">Most Popular</span>
+      </div>
+      <div class="srv-card reveal d1">
+        <div class="srv-num">02</div>
+        <div class="srv-icon">📦</div>
+        <h3>Package Trips</h3>
+        <p>End-to-end packages covering accommodation, meals, guided tours, and transport in our own vehicles. One booking — zero hassle for your entire group.</p>
+        <span class="srv-badge">All-Inclusive</span>
+      </div>
+      <div class="srv-card reveal d2">
+        <div class="srv-num">03</div>
+        <div class="srv-icon">🗺️</div>
+        <h3>Regular Trips</h3>
+        <p>Meticulously planned adventure routes to popular destinations. Every trip is a joyful experience with our warm, professional team onboard.</p>
+        <span class="srv-badge">Scheduled</span>
+      </div>
+      <div class="srv-card reveal">
+        <div class="srv-num">04</div>
+        <div class="srv-icon">🏛️</div>
+        <h3>Temple & Pilgrimage Tours</h3>
+        <p>Comfortable and reverent pilgrimage journeys to Tamil Nadu's most sacred destinations. We handle the logistics so you can focus on your devotion.</p>
+        <span class="srv-badge">Devotional</span>
+      </div>
+      <div class="srv-card reveal d1">
+        <div class="srv-num">05</div>
+        <div class="srv-icon">🏢</div>
+        <h3>Corporate & Group Travel</h3>
+        <p>Professional group transport for corporate events, team outings, and large gatherings. Punctual, presentable, and perfectly coordinated every time.</p>
+        <span class="srv-badge">Professional</span>
+      </div>
+      <div class="srv-card reveal d2">
+        <div class="srv-num">06</div>
+        <div class="srv-icon">🎊</div>
+        <h3>Special Occasions</h3>
+        <p>Weddings, family reunions, and celebrations deserve special transport. Arrive in style with Sri Alagarmalaiyan's premium, well-presented fleet.</p>
+        <span class="srv-badge">Premium</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FEATURES ═══ -->
+<section id="features">
+  <div class="section-wrap">
+    <div class="feat-grid">
+      <div>
+        <div class="tag reveal">Why Choose Us</div>
+        <h2 class="sec-title reveal">Everything That Makes Your Journey Better</h2>
+        <div class="divider reveal"></div>
+        <div class="feat-list">
+          <div class="feat-row reveal">
+            <div class="feat-ico">❄️</div>
+            <div><h4>Fully Air-Conditioned Fleet</h4><p>Every single bus is equipped with powerful AC systems. Comfort and safety are our foremost priority on all journeys regardless of the weather.</p></div>
+          </div>
+          <div class="feat-row reveal d1">
+            <div class="feat-ico">🧑‍✈️</div>
+            <div><h4>Experienced, Trained Drivers</h4><p>10+ years of driving experience. Our drivers are courteous, licensed, and specifically trained for long-distance routes across South India.</p></div>
+          </div>
+          <div class="feat-row reveal d2">
+            <div class="feat-ico">🔌</div>
+            <div><h4>Individual Charging Points</h4><p>Every passenger seat has its own dedicated charging socket. Stay powered up for the entire journey — your phone won't die before the destination.</p></div>
+          </div>
+          <div class="feat-row reveal">
+            <div class="feat-ico">✨</div>
+            <div><h4>Spotlessly Clean Interiors</h4><p>A bad ambiance ruins travel mood. Our vehicles are deep-cleaned before every single trip ensuring a fresh, pleasant atmosphere throughout.</p></div>
+          </div>
+          <div class="feat-row reveal d1">
+            <div class="feat-ico">🎵</div>
+            <div><h4>DJ, Lighting & Audio System</h4><p>Travel isn't fun without great music. Our premium DJ setup with dynamic lighting and crystal-clear sound turns every long trip into a celebration.</p></div>
+          </div>
+          <div class="feat-row reveal d2">
+            <div class="feat-ico">🕐</div>
+            <div><h4>24/7 Support Team</h4><p>Questions, itinerary changes, or emergencies — our support team is available round the clock. We are always just one call away for any need.</p></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="feat-aside reveal">
+          <div class="feat-aside-top">
+            <h3>Ready to Book Your Next Trip?</h3>
+            <p>Whether it's a school excursion, family pilgrimage, or corporate retreat — we'll take care of every detail. Get a free quote today.</p>
+          </div>
+          <div class="feat-aside-btns">
+            <a href="tel:+919445238997" class="aside-call">📞 Call +91 94452 38997</a>
+            <a href="https://wa.me/919445238997" class="aside-wa" target="_blank" rel="noopener">💬 Chat on WhatsApp</a>
+          </div>
+          <div class="feat-aside-achs">
+            <h5>Our Notable Achievements</h5>
+            <div class="ach-item"><div class="ach-dot"></div>200 girl students — North India trip</div>
+            <div class="ach-item"><div class="ach-dot"></div>350 school students — Munnar trip</div>
+            <div class="ach-item"><div class="ach-dot"></div>400 students — Bangalore & Mysore trip</div>
+            <div class="ach-item"><div class="ach-dot"></div>300 students — Kanyakumari & Trivandrum</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FLEET ═══ -->
+<section id="fleet">
+  <div class="section-wrap">
+    <div class="fleet-head">
+      <div class="tag reveal" style="justify-content:center">Our Fleet</div>
+      <h2 class="sec-title reveal" style="text-align:center">Choose Your Perfect Bus</h2>
+      <p class="sec-body reveal" style="text-align:center;margin:0.8rem auto 0">All vehicles are brand-new, fully air-conditioned and fitted with modern amenities for maximum passenger comfort.</p>
+    </div>
+    <div class="fleet-grid">
+      <div class="fleet-card reveal">
+        <div class="fleet-top">
+          <div class="fleet-seats">54</div>
+          <div class="fleet-seat-label">Seater AC Bus</div>
+        </div>
+        <div class="fleet-body">
+          <h4>Grand Cruiser</h4>
+          <div class="fleet-tags">
+            <span class="f-tag">Full AC</span>
+            <span class="f-tag">DJ System</span>
+            <span class="f-tag">Charging Points</span>
+          </div>
+          <div class="fleet-ideal">✦ Best for large school groups & corporate events</div>
+        </div>
+      </div>
+      <div class="fleet-card reveal d1">
+        <div class="fleet-top">
+          <div class="fleet-seats">50</div>
+          <div class="fleet-seat-label">Seater AC Bus</div>
+        </div>
+        <div class="fleet-body">
+          <h4>Express Comfort</h4>
+          <div class="fleet-tags">
+            <span class="f-tag">Full AC</span>
+            <span class="f-tag">DJ System</span>
+            <span class="f-tag">Charging Points</span>
+          </div>
+          <div class="fleet-ideal">✦ Ideal for group tours & package trips</div>
+        </div>
+      </div>
+      <div class="fleet-card reveal d2">
+        <div class="fleet-top">
+          <div class="fleet-seats">40</div>
+          <div class="fleet-seat-label">Seater AC Bus</div>
+        </div>
+        <div class="fleet-body">
+          <h4>Mid-Size Cruiser</h4>
+          <div class="fleet-tags">
+            <span class="f-tag">Full AC</span>
+            <span class="f-tag">DJ System</span>
+            <span class="f-tag">Charging Points</span>
+          </div>
+          <div class="fleet-ideal">✦ Perfect for college trips & pilgrimages</div>
+        </div>
+      </div>
+      <div class="fleet-card reveal d3">
+        <div class="fleet-top">
+          <div class="fleet-seats">30</div>
+          <div class="fleet-seat-label">Seater AC Bus</div>
+        </div>
+        <div class="fleet-body">
+          <h4>Compact Traveller</h4>
+          <div class="fleet-tags">
+            <span class="f-tag">Full AC</span>
+            <span class="f-tag">DJ System</span>
+            <span class="f-tag">Charging Points</span>
+          </div>
+          <div class="fleet-ideal">✦ Great for family groups & small tours</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ DESTINATIONS ═══ -->
+<section id="destinations">
+  <div class="section-wrap">
+    <div class="dest-head">
+      <div>
+        <div class="tag reveal" style="color:var(--gold)">Where We Go</div>
+        <h2 class="sec-title light reveal">Popular Destinations</h2>
+      </div>
+      <p class="sec-body light reveal" style="max-width:300px;text-align:right">From the hills of Ooty to the shores of Rameswaram — we take you there.</p>
+    </div>
+    <div class="dest-grid">
+      <div class="dest-card reveal">
+        <div class="dest-flag">⛰️</div>
+        <h3>Hill Stations</h3>
+        <p>Ooty, Kodaikanal, Munnar, Yercaud — breathtaking hill escapes for schools, colleges, and families.</p>
+        <div class="dest-tags"><span class="d-tag">Ooty</span><span class="d-tag">Kodaikanal</span><span class="d-tag">Munnar</span><span class="d-tag">Yercaud</span></div>
+      </div>
+      <div class="dest-card reveal d1">
+        <div class="dest-flag">🌊</div>
+        <h3>Coastal & Temple Tours</h3>
+        <p>Rameswaram, Kanyakumari, Madurai, Thanjavur — sacred and scenic coastal destinations across Tamil Nadu.</p>
+        <div class="dest-tags"><span class="d-tag">Rameswaram</span><span class="d-tag">Kanyakumari</span><span class="d-tag">Madurai</span></div>
+      </div>
+      <div class="dest-card reveal d2">
+        <div class="dest-flag">🌆</div>
+        <h3>City & Heritage Tours</h3>
+        <p>Bangalore, Mysore, Chennai, Pondicherry — urban adventures and heritage journeys across South India.</p>
+        <div class="dest-tags"><span class="d-tag">Bangalore</span><span class="d-tag">Mysore</span><span class="d-tag">Pondicherry</span></div>
+      </div>
+      <div class="dest-card reveal">
+        <div class="dest-flag">🏔️</div>
+        <h3>North India Tours</h3>
+        <p>Delhi, Agra, Jaipur, Varanasi — long-haul North India packages for large groups and educational tours.</p>
+        <div class="dest-tags"><span class="d-tag">Delhi</span><span class="d-tag">Agra</span><span class="d-tag">Jaipur</span><span class="d-tag">Varanasi</span></div>
+      </div>
+      <div class="dest-card reveal d1">
+        <div class="dest-flag">🌴</div>
+        <h3>Kerala Backwaters</h3>
+        <p>Alleppey, Thekkady, Trivandrum, Kovalam — God's Own Country tours loved by all age groups.</p>
+        <div class="dest-tags"><span class="d-tag">Alleppey</span><span class="d-tag">Thekkady</span><span class="d-tag">Trivandrum</span></div>
+      </div>
+      <div class="dest-card reveal d2">
+        <div class="dest-flag">🎯</div>
+        <h3>Custom Destinations</h3>
+        <p>Have a specific place in mind? We'll plan a custom route just for you. Any destination, any group size.</p>
+        <div class="dest-tags"><span class="d-tag">Any Destination</span><span class="d-tag">Custom Route</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TESTIMONIALS ═══ -->
+<section id="testimonials">
+  <div class="section-wrap">
+    <div class="testi-head">
+      <div class="tag reveal" style="justify-content:center">Customer Reviews</div>
+      <h2 class="sec-title reveal" style="text-align:center">What Our Passengers Say</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">Excellent bus facility. Very kind drivers. They provided highly comfortable rooms and superb food. Fantastic service throughout the entire trip.</p>
+        <div class="testi-author">
+          <div class="testi-av">MG</div>
+          <div><div class="testi-name">Mahendran Gandhi</div><div class="testi-label">Group Tour Customer</div></div>
+        </div>
+      </div>
+      <div class="testi-card reveal d1">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">The transport is more comfortable than we expected. Your team was superb — they supported us a lot and took such great care throughout the journey.</p>
+        <div class="testi-author">
+          <div class="testi-av">SW</div>
+          <div><div class="testi-name">Swetha</div><div class="testi-label">Package Trip Customer</div></div>
+        </div>
+      </div>
+      <div class="testi-card reveal d2">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">Last week we had a trip to Kerala–Kanyakumari. Amazing journey on the ultimate king AC coach. Drivers were so patient and wonderful with all passengers.</p>
+        <div class="testi-author">
+          <div class="testi-av">BA</div>
+          <div><div class="testi-name">Babu Anbu</div><div class="testi-label">Kerala Tour Customer</div></div>
+        </div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">Your service is too good. Excellent in every way. Without any doubt we can recommend for all trips. Keep continuing the excellent services always!</p>
+        <div class="testi-author">
+          <div class="testi-av">UM</div>
+          <div><div class="testi-name">Uthra Mathi</div><div class="testi-label">Regular Customer</div></div>
+        </div>
+      </div>
+      <div class="testi-card reveal d1">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">Vera level 🔥 Sri Alagarmalaiyan Bus Transport — such an excellent service! Best transport for intercity travel and all tour packages. Highly recommended!</p>
+        <div class="testi-author">
+          <div class="testi-av">SS</div>
+          <div><div class="testi-name">Santhiya Santhiya</div><div class="testi-label">Tour Customer</div></div>
+        </div>
+      </div>
+      <div class="testi-card reveal d2">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">Very good service and budget friendly. Felt complete comfort and security throughout. A truly pleasant journey from start to finish. Definitely will book again!</p>
+        <div class="testi-author">
+          <div class="testi-av">AJ</div>
+          <div><div class="testi-name">Ajmal Saleem</div><div class="testi-label">Group Customer</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CLIENTS ═══ -->
+<div id="clients">
+  <p class="clients-label reveal">Trusted by Leading Institutions Across Tamil Nadu</p>
+  <div class="clients-overflow reveal">
+    <div class="clients-track">
+      <span class="c-name">Anna University</span><span class="c-dot"></span>
+      <span class="c-name">SRM University</span><span class="c-dot"></span>
+      <span class="c-name">Syed Ammal Engineering</span><span class="c-dot"></span>
+      <span class="c-name">KVEG Group</span><span class="c-dot"></span>
+      <span class="c-name">Lions Club International</span><span class="c-dot"></span>
+      <span class="c-name">Sudharsan College</span><span class="c-dot"></span>
+      <span class="c-name">CVMS Schools</span><span class="c-dot"></span>
+      <span class="c-name">Alagappa University</span><span class="c-dot"></span>
+      <span class="c-name">KIM College</span><span class="c-dot"></span>
+      <!-- Duplicate for seamless loop -->
+      <span class="c-name">Anna University</span><span class="c-dot"></span>
+      <span class="c-name">SRM University</span><span class="c-dot"></span>
+      <span class="c-name">Syed Ammal Engineering</span><span class="c-dot"></span>
+      <span class="c-name">KVEG Group</span><span class="c-dot"></span>
+      <span class="c-name">Lions Club International</span><span class="c-dot"></span>
+      <span class="c-name">Sudharsan College</span><span class="c-dot"></span>
+      <span class="c-name">CVMS Schools</span><span class="c-dot"></span>
+      <span class="c-name">Alagappa University</span><span class="c-dot"></span>
+      <span class="c-name">KIM College</span><span class="c-dot"></span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ CTA BANNER ═══ -->
+<div id="cta-banner">
+  <div class="cta-tag">Limited Slots Available</div>
+  <h2 class="reveal">Ready for Your Next Adventure?</h2>
+  <p class="reveal">Book your trip now and travel with the most trusted name in Karaikudi for over 30 years. Comfort, safety, and joy — guaranteed.</p>
+  <div class="cta-btns reveal">
+    <a href="#contact" class="btn-gold">Get a Free Quote →</a>
+    <a href="https://wa.me/919445238997" class="btn-ghost" target="_blank" rel="noopener">💬 WhatsApp Us</a>
+  </div>
+  <a href="tel:+919445238997" class="cta-phone">+91 94452 38997</a>
+</div>
+
+<!-- ═══ CONTACT ═══ -->
+<section id="contact">
+  <div class="section-wrap">
+    <div class="contact-grid">
+      <div>
+        <div class="tag reveal">Get In Touch</div>
+        <h2 class="sec-title reveal">Let's Plan Your<br>Next Journey</h2>
+        <div class="divider reveal"></div>
+        <p class="sec-body reveal">Have a trip in mind? Call us directly or fill the form for a personalised quote. We'll get back within a few hours.</p>
+        <div class="contact-info-list">
+          <div class="ci-item reveal">
+            <div class="ci-icon">📍</div>
+            <div><h5>Address</h5><p>155/1, Amman Sannathi, Near Manikoondu,<br>Karaikudi – 630 001, Tamil Nadu</p></div>
+          </div>
+          <div class="ci-item reveal d1">
+            <div class="ci-icon">📞</div>
+            <div><h5>Phone</h5><a href="tel:+919445238997">+91 94452 38997</a></div>
+          </div>
+          <div class="ci-item reveal d2">
+            <div class="ci-icon">✉️</div>
+            <div><h5>Email</h5><a href="mailto:suhandan1997@gmail.com">suhandan1997@gmail.com</a></div>
+          </div>
+          <div class="ci-item reveal d3">
+            <div class="ci-icon">🕐</div>
+            <div><h5>Availability</h5><p>24 hours · 7 days a week · Always here for you</p></div>
+          </div>
+        </div>
+        <div class="map-box reveal">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15713.588496673074!2d78.7661864!3d10.06651!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b005dfbd8965b19%3A0x257fd29e726fdf88!2sSri%20Alagarmalaiyan%20Transports!5e0!3m2!1sen!2sin!4v1709965514331!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+      <div class="form-box reveal">
+        <h3>Request a Free Quote</h3>
+        <p>Fill in your details and we'll prepare a personalised quote for your group.</p>
+        <div class="f-row">
+          <div class="fg"><label>Your Name *</label><input type="text" placeholder="Full name"></div>
+          <div class="fg"><label>Phone Number *</label><input type="tel" placeholder="+91 XXXXX XXXXX"></div>
+        </div>
+        <div class="fg"><label>Email Address</label><input type="email" placeholder="you@example.com"></div>
+        <div class="f-row">
+          <div class="fg">
+            <label>Service Required *</label>
+            <select>
+              <option value="">Select service...</option>
+              <option>School / College Tour</option>
+              <option>Package Trip</option>
+              <option>Temple / Pilgrimage Tour</option>
+              <option>Corporate Group Travel</option>
+              <option>Special Occasion</option>
+              <option>Regular Trip</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="fg">
+            <label>Bus Size Required</label>
+            <select>
+              <option value="">Select size...</option>
+              <option>30 Seater AC Bus</option>
+              <option>40 Seater AC Bus</option>
+              <option>50 Seater AC Bus</option>
+              <option>54 Seater AC Bus</option>
+              <option>Not Sure Yet</option>
+            </select>
+          </div>
+        </div>
+        <div class="f-row">
+          <div class="fg"><label>Travel Date</label><input type="date"></div>
+          <div class="fg"><label>No. of Passengers</label><input type="number" placeholder="e.g. 45" min="1"></div>
+        </div>
+        <div class="fg"><label>Trip Details</label><textarea placeholder="From → To destination, pickup location, any special requirements..."></textarea></div>
+        <button class="f-submit" onclick="handleSubmit(this)">Send My Enquiry →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="logo">
+        <div class="logo-emblem">SA</div>
+        <div class="logo-text">
+          <span>Sri Alagarmalaiyan</span>
+          <span>Bus Transports · Est. 1996</span>
+        </div>
+      </div>
+      <p class="footer-brand-desc">
+        Karaikudi's most trusted bus transport and travel agency. Serving Tamil Nadu and beyond with comfort, safety, and reliability for over 30 years.
+      </p>
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/srialagarmalaiyanbustransports" class="f-social" target="_blank" rel="noopener">Fb</a>
+        <a href="https://www.instagram.com/srialagarmalaiyan_bustransport/" class="f-social" target="_blank" rel="noopener">Ig</a>
+        <a href="https://wa.me/919445238997" class="f-social" target="_blank" rel="noopener">Wa</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Our Services</a></li>
+        <li><a href="#fleet">Our Fleet</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact">Book a Trip</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#services">School & College Tours</a></li>
+        <li><a href="#services">Package Trips</a></li>
+        <li><a href="#services">Temple Tours</a></li>
+        <li><a href="#services">Corporate Travel</a></li>
+        <li><a href="#services">Regular Trips</a></li>
+        <li><a href="#services">Special Occasions</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:+919445238997">+91 94452 38997</a></li>
+        <li><a href="mailto:suhandan1997@gmail.com">suhandan1997@gmail.com</a></li>
+        <li><a href="#contact">Karaikudi, Tamil Nadu</a></li>
+        <li><a href="#contact">Open 24 / 7</a></li>
+        <li><a href="https://wa.me/919445238997" target="_blank" rel="noopener">WhatsApp Chat</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Sri Alagarmalaiyan Bus Transports. All rights reserved.</span>
+    <span>Karaikudi · Tamil Nadu · Est. 1996</span>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/919445238997" class="wa-float" target="_blank" rel="noopener" title="Chat on WhatsApp">💬</a>
+
+<script>
+// ── NAV SCROLL
+const nav = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 60);
+});
+
+// ── MOBILE MENU
+function toggleMenu() {
+  document.getElementById('mobMenu').classList.toggle('open');
+  document.getElementById('hamburger').classList.toggle('open');
+}
+function closeMenu() {
+  document.getElementById('mobMenu').classList.remove('open');
+  document.getElementById('hamburger').classList.remove('open');
+}
+
+// ── SCROLL REVEAL
+const revealEls = document.querySelectorAll('.reveal');
+const revealObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('up'); });
+}, { threshold: 0.1 });
+revealEls.forEach(el => revealObs.observe(el));
+
+// ── COUNTER ANIMATION
+function runCounter(el) {
+  const target = parseInt(el.dataset.target);
+  let val = 0;
+  const step = Math.ceil(target / 45);
+  const t = setInterval(() => {
+    val = Math.min(val + step, target);
+    el.textContent = val;
+    if (val >= target) clearInterval(t);
+  }, 38);
+}
+const counters = document.querySelectorAll('.counter');
+const cntObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { runCounter(e.target); cntObs.unobserve(e.target); }});
+}, { threshold: 0.5 });
+counters.forEach(c => cntObs.observe(c));
+
+// ── FORM SUBMIT
+function handleSubmit(btn) {
+  const form = btn.closest('.form-box');
+  const name = form.querySelector('input[type="text"]').value.trim();
+  const phone = form.querySelector('input[type="tel"]').value.trim();
+  if (!name || !phone) {
+    btn.textContent = '⚠ Please fill your Name & Phone first';
+    btn.style.background = '#E74C3C';
+    setTimeout(() => { btn.textContent = 'Send My Enquiry →'; btn.style.background = ''; }, 2500);
+    return;
+  }
+  btn.textContent = '✓ Enquiry Sent! We\'ll call you shortly.';
+  btn.style.background = '#2ECC71';
+  btn.style.color = '#fff';
+  btn.disabled = true;
+}
+</script>
+</body>
+</html>
